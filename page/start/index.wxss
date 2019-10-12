@@ -1,0 +1,159 @@
+/* page/start/index.wxss */
+#tabs{
+  font-size: 28rpx;
+}
+.tabs-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80rpx;
+  text-align: center;
+}
+.tabs-item.selected {
+  color: #353535;
+  /* border-bottom: 3pt solid #F5A623; */
+}
+.tabs-item {
+  width: 33.3%;
+  height: 60rpx;
+  color: #9B9B9B;
+  /* border-bottom: 2rpx solid #e9e9e9; */
+}
+.tabs-line{
+  border-bottom: 3pt solid #F5A623;
+  margin-left:40%; 
+  width:20%;
+}
+
+.page-wrapper {
+    margin: 0;
+    font-size: 28rpx;
+    line-height: 1.5;
+    color: #333;
+    background-color: #efefef;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: transparent;
+    min-height:2000rpx;
+}
+
+.bus-list .bus-list-item {
+ position: relative;
+ height: 206rpx;
+ background-color: #ffeeb9; 
+ margin-top: 52rpx;
+ margin-right: 52rpx;
+ margin-left: 76rpx;
+ border: 2rpx solid #fff;
+ border-width: 0 0; 
+ border-radius: 10rpx 10rpx 10rpx 10rpx;
+}
+
+.bus-list .bus-list-item::before,.bus-list .bus-list-item::after {
+ position: absolute;
+ left: 0;
+ content: '';
+ width: 10%;
+ height: 80rpx;
+ background-color: #efefef;
+}
+
+.bus-list .bus-list-item::before {
+  border-radius: 0 60rpx 60rpx 0;
+  border-top: none;
+  top: 63rpx;
+}
+
+.bus-list .bus-list-item::after {
+  border-radius: 60rpx 0 0 60rpx;
+  border-bottom: none;
+  bottom: 63rpx;
+  left: 90%;
+}
+
+.bus-list .bus-list-item .bus-time {
+ position: absolute;
+ left: 70%;
+ width: 30%;
+ height: 206rpx;
+ line-height: 206rpx;
+ margin: 1rpx 0;
+ color: #00b358;
+ text-align: center;
+ font-size: 40rpx;
+ font-family: Arial;
+ border-left: 2rpx dashed #F5A623;
+}
+.bus-list .bus-list-item .detail {
+ height: 80rpx;
+ padding: rpx 0;
+ margin: 20rpx 31% 0 80rpx;
+}
+.bus-ticket {
+  margin-top: 0;
+  margin-left: 95rpx;
+  margin-right: 31%;
+  height: 40%;
+  font-size: 34rpx;
+  color: #F5A623;
+}
+.s-icon3 {
+  text-align: left;
+}
+.tempView {
+  height: 30rpx;
+}
+.bus-list .bus-list-item .detail  .sub-list{
+    height: 52rpx;
+}
+
+.bus-list .bus-list-item .start, .bus-list .bus-list-item .end {
+ color: #333333;
+ font-size: 22rpx;
+}
+
+.bus-list .bus-list-item .price {
+ font-family: Arial;
+ color: #fd8f01;
+ font-size: 32rpx;
+ font-weight: 600;
+}
+
+.bus-list .bus-list-item.disabled .ticket {
+ display: none;
+}
+
+.bus-list .bus-list-item .ticket {
+  color: #fd8f01;
+  font-size: 24rpx;
+  border: 2rpx solid #fd8f01;
+  padding: 2rpx 8rpx;
+  border-radius: 10rpx;
+  font-family: Arial;
+}
+
+.bus-list .bus-list-item.disabled .ticket {
+  color: #c5c5c5;
+}
+
+.bus-list .bus-list-item .s-icon1 {
+  margin: 0 10rpx;
+  border-color: #00B358;
+}
+
+.bus-list .bus-list-item .s-icon2 {
+  margin: 0 10rpx;
+  border-color: #f06463;
+}
+
+.bus-list .bus-list-item .tags {
+    width: 160rpx;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    margin-right: 138rpx;
+    margin-top: 34rpx;
+    top: 0;
+}
+
+

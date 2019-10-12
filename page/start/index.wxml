@@ -1,0 +1,53 @@
+<!--page/start/index.wxml-->
+<view id='tabs'>
+  <view class='tabs-box'>
+    <block wx:for="{{['可使用','已使用','已过期']}}" wx:key="index">
+    <view class="tabs-item {{currentTabIndex == index ? 'selected' : ''}}" bindtap='onTabsItemTap' data-index='{{index}}'>
+     <text>{{item}}</text>
+    <view class="tabs-line" wx:if="{{currentTabIndex == index}}">
+    </view>
+    </view>
+    </block>
+  </view>
+  <view class='order-detail'>
+    <view hidden="{{currentTabIndex != 0}}">
+      <view class="page-wrapper ">
+      <!-- 页面一 -->
+  <view class="bus-list js_bus_list ">
+    <view data-supplierid="100020" data-key="" class="bus-list-item">
+      <view class="bus-time"></view>
+      <view class="bus-ticket">
+          <view class="tempView"></view>
+          <text class="s-icon3"></text>￥5优惠券
+      </view>
+      <view class="detail">
+        <view class="detail1">
+          <view class="start">
+            <text class="icon-circle s-icon1"></text>订单金额满99元使用
+              </view>
+          <view class="end">
+            <text class="icon-circle s-icon2"></text>有效期2019.9.24-2019.10
+</view>
+          </view>
+      </view>
+    </view>
+  </view>
+  
+  <include src="../mod/calendar.wxml" />
+  <include src="../../utils/abstract-page.wxml" />
+
+</view>
+    </view>
+    <view hidden="{{currentTabIndex != 1}}">
+      页面二
+    </view>
+    <view hidden="{{currentTabIndex != 2}}">
+      页面三
+    </view>
+  </view>
+</view>
+
+
+
+
+
